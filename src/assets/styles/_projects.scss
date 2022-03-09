@@ -1,0 +1,242 @@
+.projects {
+  &__row {
+    display: flex;
+    margin: 0 -12px 24px -12px;
+    padding: 0 12px;
+    justify-content: space-between;
+    @media (max-width: ($md2+px)) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    width: 648px;
+    padding: 40px 10px 40px 64px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--primary-bg-color);
+    border: var(--main-border);
+    border-radius: var(--main-border-radius);
+    @media (max-width: ($md1+px)) {
+      width: 474px;
+      padding: 30px 10px 40px 40px;
+    }
+    @media (max-width: ($md2+px)) {
+      width: 100%;
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &::after {
+      content: "";
+      background: var(--bg-after-block);
+      border-radius: 7px 0 0 7px;
+      transform: rotate(-180deg);
+      position: absolute;
+      left: 0;
+      top: 24%;
+      width: 8px;
+      height: 320px;
+    }
+  }
+}
+
+.info {
+  &__title {
+    text-align: center;
+    margin: 0 54px 24px 0;
+  }
+
+  &__body {
+    max-height: 480px;
+    overflow-y: scroll;
+    @media (max-width: ($md1+px)) {
+      max-height: 500px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0 46px 0 0;
+    @media (max-width: ($md1+px)) {
+      padding: 0 20px 0 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--team {
+      align-items: flex-start;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-primary);
+    min-width: 135px;
+  }
+
+  &__content {
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--color-checkbox-eff);
+
+    &--status {
+      font-size: 14px;
+      line-height: 21px;
+      color: var(--color-alert);
+      &-grean {
+        color: var(--color-completed);
+      }
+    }
+
+    &--label {
+      position: relative;
+      padding: 3px 12px 3px 20px;
+      min-width: 70px;
+      margin-right: 10px;
+      background: url("../img/label.svg") 50% / cover no-repeat;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--color-white);
+    }
+
+    &--tag {
+      margin-right: 10px;
+      border: var(--color-border-tag);
+      border-radius: 15px;
+      padding: 3px 12px;
+      @media (max-width: ($md4+px)) {
+        text-align: center;
+      }
+    }
+
+    &--devs {
+      word-wrap: break-word;
+    }
+  }
+
+  &__dollar-sign-icon {
+    width: 20px;
+    margin-right: 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.time {
+  padding: 40px 64px 40px 64px;
+  @media (max-width: ($md1+px)) {
+    width: 474px;
+    padding: 30px 30px 40px 40px;
+  }
+  @media (max-width: ($md2+px)) {
+    width: 100%;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  &__sum {
+    margin-top: 4px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: ($md4+px)) {
+      flex-direction: column;
+    }
+  }
+
+  &__col {
+    @media (max-width: ($md1+px)) {
+      flex: 0 0 45%;
+    }
+    @media (max-width: ($md4+px)) {
+      width: 100%;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    @media (max-width: ($md4+px)) {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    width: 240px;
+    @media (max-width: ($md1+px)) {
+      width: 180px;
+    }
+    @media (max-width: ($md2+px)) {
+      width: 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0px;
+    line-height: 21px;
+    border-bottom: var(--main-border);
+    &:last-child {
+      border-bottom: 1px solid transparent;
+    }
+
+    &--list {
+      width: 215px;
+      @media (max-width: ($md1+px)) {
+        width: 160px;
+      }
+      @media (max-width: ($md2+px)) {
+        width: 90%;
+      }
+    }
+
+    &--col {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--row {
+      display: flex;
+      width: 100%;
+      padding: 8px 0px;
+      line-height: 21px;
+      justify-content: space-between;
+    }
+
+    &--row-list {
+      display: flex;
+      width: 100%;
+      line-height: 21px;
+      justify-content: flex-end;
+      border-top: var(--main-border);
+      border-bottom: var(--main-border);
+    }
+  }
+
+  &__month {
+    margin-bottom: 40px;
+    @media (max-width: ($md4+px)) {
+      margin-bottom: 20px;
+    }
+  }
+}

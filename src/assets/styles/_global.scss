@@ -1,0 +1,189 @@
+:root {
+  --select-width: 200px;
+  --select-height: 40px;
+  --main-border-radius: 7px;
+  --basic-font-size: 14px;
+  --main-ml: 60px;
+  --fw-bold: 700;
+  --fw-semi-bold: 600;
+  --fw-normal: 400;
+  /*for filters*/
+  --filter-mr: 24px;
+  --button-height: 40px;
+  --select-padding: 0 18px 0 16px;
+
+  /*for checkbox*/
+  --checkbox-height: 20px;
+  --checkbox-width: 20px;
+
+  /*for header*/
+  --width-selected-item-header: 127px;
+  --mr-categoty-header: 48px;
+  --height-category-header: 100%;
+  --ml-category-text: 8px;
+
+  /*for block info*/
+  --block-width: 648px;
+  --block-height: 606px;
+  --block-margin-title: 40px 0 24px 0;
+  --block-fs-title: 16px;
+  --block-inside-padding: 0 10px 0 64px;
+
+  /*for block time*/
+  --inside-block-width: 240px;
+  --inside-block-mb: 16px;
+
+  /*for grid */
+  --grid-width: 1319px;
+}
+html[data-theme="dark"] {
+  --main-bg-color: #171e28;
+  --primary-bg-color: #242b35;
+  --secondary-bg-color: #8f7fff;
+  --active-link-background: rgba(143, 127, 255, 0.15);
+  --header-filter: invert(60%) sepia(50%) saturate(4557%) hue-rotate(217deg)
+    brightness(100%) contrast(101%);
+  --header-after: linear-gradient(
+    to top,
+    var(--light-grey-bg-color) 15.3%,
+    var(--secondary-bg-color) 47.74%,
+    var(--light-blue-tone-bg-color) 67.74%,
+    var(--blue-tone-bg-color) 87.74%
+  );
+  --dark-grey-bg-color: #3d444e;
+  --light-grey-bg-color: #bfbafa;
+  --blue-tone-bg-color: #624bff;
+  --light-blue-tone-bg-color: #7f76f7;
+
+  --tone-dark-grey-bg-color-first: #2d333d;
+  --tone-dark-grey-bg-color-second: #1e242f;
+  --border-color-table: 1px solid transparent;
+  --color-primary: #c7bfff;
+  --text-color-secondary: #b6b4c6;
+  --text-color-light-violet: #8f7fff;
+  --color-alert: #eb5757;
+  --color-completed: #27ae60;
+  --main-border: 1px solid #3d444e;
+
+  --color-select-text: #ffffff;
+  --color-white: #ffffff;
+  --color-checkbox-eff: #b6b4c6;
+  --color-title: #ffffff;
+  --color-border-tag: 1px solid #6f68c6;
+
+  --color-border-row: 1px solid #363c45;
+  --color-footer: #ffffff;
+  --color-tasks: #8f7fff;
+  --colol-bg-odd-row-table: #1e242f;
+
+  --bg-after-block: linear-gradient(
+    350.45deg,
+    var(--light-grey-bg-color) 15.3%,
+    var(--secondary-bg-color) 47.74%,
+    var(--light-blue-tone-bg-color) 67.74%,
+    var(--blue-tone-bg-color) 77.74%
+  );
+
+  --bg-hover-select: rgba(124, 128, 134, 0.15);
+  --bg-hover-select-color: rgba(143, 127, 255, 0.5);
+}
+html[data-theme="light"] {
+  --main-bg-color: #f8f8f8; //+
+  --primary-bg-color: #ffffff; //+
+  --secondary-bg-color: #3c86f7; //+
+  --header-filter: invert(47%) sepia(32%) saturate(1458%) hue-rotate(182deg)
+    brightness(98%) contrast(98%);
+  --header-after: linear-gradient(
+    to top,
+    #a9d1f9 39.5%,
+    #6caef6 83.95%,
+    #624bff 83.95%,
+    #8f7fff 83.95%
+  );
+  --active-link-background: transparent; //+
+  --dark-grey-bg-color: #3d444e;
+  --light-grey-bg-color: #bfbafa;
+  --blue-tone-bg-color: #624bff;
+  --light-blue-tone-bg-color: #7f76f7;
+
+  --tone-dark-grey-bg-color-first: #ffffff;
+  --border-color-table: 1px solid #d5deeb;
+  --tone-dark-grey-bg-color-second: #1e242f;
+  --color-primary: #1c467a; //+
+  --text-color-secondary: #919cb0; //+
+  --text-color-light-violet: #8f7fff;
+  --color-alert: #eb5757;
+  --color-completed: #27ae60;
+  --main-border: 1px solid #d5deeb; //+
+
+  --color-select-text: #435072; //+
+  --color-white: #ffffff;
+  --color-checkbox-eff: #435072;
+  --color-title: #1c467a;
+  --color-border-tag: 1px solid #3c86f7;
+  --colol-bg-odd-row-table: #fbfdff;
+
+  --color-border-row: 1px solid #d5deeb;
+  --color-footer: #0f2a49;
+  --color-tasks: #435072;
+
+  --bg-after-block: linear-gradient(
+    0.1deg,
+    rgba(169, 209, 249, 0.58) 19.81%,
+    rgba(60, 134, 247, 0.6) 106.02%
+  );
+
+  --bg-hover-select: #eff2f9;
+  --bg-hover-select-color: #d8e7fd;
+}
+
+$fontfamily: "Open Sans", sans-serif;
+$minwidth: 320px;
+$maxwidth: 1920;
+$maxWidthContainer: 1320;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+html.transition,
+html.transition * {
+  transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+body {
+  color: #000;
+  font-size: 14px;
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  @media (max-width: ($md1+px)) {
+    max-width: 970px;
+  }
+  @media (max-width: ($md2+px)) {
+    max-width: 750px;
+  }
+  @media (max-width: ($md3+px)) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+  background-color: var(--main-bg-color);
+}
