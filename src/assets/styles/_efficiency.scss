@@ -52,7 +52,7 @@
     margin-bottom: 24px;
   }
 
-  &__col {
+  &__list {
     flex: 0 0 48%;
     @media (max-width: ($md3+px)) {
       width: 100%;
@@ -73,13 +73,16 @@
     }
   }
 
-  &__row {
-    display: flex;
-    justify-content: space-between;
+  &__list-item {
     border-bottom: var(--color-border-row);
     &:last-child {
       border: none;
     }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
   }
 
   &__item {

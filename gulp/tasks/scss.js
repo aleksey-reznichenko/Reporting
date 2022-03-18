@@ -18,7 +18,8 @@ export const scss = () => {
             })
         ))
         .pipe(sass({
-            outputStyle: 'expanded'
+            outputStyle: 'expanded',
+            //includePaths: require('node-normalize-scss').includePaths
         }))
         .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
         .pipe(app.plugins.if(app.isBuild, webpcss({

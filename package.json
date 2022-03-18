@@ -38,6 +38,7 @@
     "gulp-webp-html-nosvg": "^1.0.5",
     "gulp-webpcss": "^1.1.1",
     "gulp-zip": "^5.1.0",
+    "node-normalize-scss": "^8.1.2",
     "sass": "^1.49.7",
     "vinyl-ftp": "^0.6.1",
     "webp-converter": "2.2.3",
@@ -45,6 +46,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "normalize.scss": "^0.1.0"
   }
 }
